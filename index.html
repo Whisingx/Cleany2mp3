@@ -1,1 +1,52 @@
 <!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Whising's Clean y2mp3</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1>Clean y2mp3</h1>
+            <p>Download Youtube videos and music, with metadata and cover art! Including playlists and albums.</p>
+        </header>
+    
+    <div class="form-group">
+        <label for="url-input">Youtube URL</label>
+        <input type="text" id="url-input" placeholder="https://youtube.com/watch?v=abcd">
+    </div>
+
+    <div class="form group">
+        <label for="format-select">Format</label>
+        <select id="format-select">
+            <option value="mp3">.mp3</option>
+            <option value="flac=">.flac</option>
+            <option value="m4a">.m4a</option>
+            <option value="mp4">.mp4</option>
+        </select>
+    </div>
+
+    <div class="checkbox-group">
+        <label>
+            <input type="checkbox" id="toggle-thumbnail" checked>Embed Cover Art
+        </label>
+        <label>
+            <input type="checkbox" id="toggle-metadata" checked>Embed Metadata Tags
+        </label>
+    </div>
+
+    <button id="download-btn" class="btn">Download</button>
+
+    <div id="status-card" class="status-card hidden">
+        <p id="status-title" class="status-title">Processing...</p>
+        <p id="status desc" class="status-desc">Please wait while the file is being processed.</p>
+        <div class="progress-bar-bg hidden" id="progress-bar"></div>
+        </div>
+       </div>
+    </div>
+
+<script src="script.js"></script>
+</body>
+</html>
