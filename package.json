@@ -1,0 +1,13 @@
+{
+    "name": "Cleany2mp3",
+    "version": "1.0.0",
+    "description": "Clean version of y2mp3, made for 3am/Boba Bash Delhi",
+    "main": "netlify/functions/download.js",
+    "scripts": {
+        "start": "netlify dev",
+        "build": "echo 'Build not required hehehehe'"
+    },
+  "dependencies": {
+    "yt-dlp-exec": "^2.5.8"
+  }
+}
